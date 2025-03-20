@@ -15,4 +15,4 @@ fi
 echo "$memory $cpu $removable" 
 
 echo docker run -m "$memory" --cpus "$cpu" "$removable" ubuntu:latest bash
-docker run -it -m "$memory" --cpus "$cpu" "$removable" ubuntu:latest /bin/bash
+docker run -it -m "$memory""mb" --cpus "$cpu" "$removable" ubuntu:latest bash
